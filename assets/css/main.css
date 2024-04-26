@@ -1055,6 +1055,14 @@ ol {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+
+  .video-thumbnail .img-fluid {
+    height: 40vh !important;
+  }
+
+  .videoBox {
+    left: 48% !important;
+  }
 }
 
 /* Section Title */

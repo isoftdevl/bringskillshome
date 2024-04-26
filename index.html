@@ -647,7 +647,7 @@ aria-label="Toggle navigation">Testimonials</a>
 <div class="overlay">
     <div class="videoBox" id="videoBox">
         <a class="close"></a>
-        <video autoplay controls src="https://warriagain.com/front/videos/WARRI%20AGAIN%20DEC%202023%20PROMO_fin++.mp4"></video>
+        <video autoplay controls src="assets/images/video/corrector02.mp4"></video>
     </div>
 </div>
 <!-- end VideoBOx -->
@@ -694,11 +694,11 @@ aria-label="Toggle navigation">Testimonials</a>
             <i class="fab fa-whatsapp"></i> Whatsapp
         </a>
     </div>
-    <a href="tel:+2349160645868" class="btn-whatsapp-pulse custom-color-black">
+    <!-- <a href="tel:+2349160645868" class="btn-whatsapp-pulse custom-color-black">
         <i class="fas fa-phone"></i>
     </a>
     <a href="https://wa.me/2349160645868?text=I%27m+interested+in+registering+for+the+Home+Skills+course" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
-        <i class="fab fa-whatsapp"></i>
+        <i class="fab fa-whatsapp"></i> -->
     </a>
     <!-- <a href="https://www.facebook.com/" class="btn-whatsapp-pulse btn-whatsapp-pulse-border-2 custom-color-blue">
         <i class="fab fa-facebook-messenger"></i>
@@ -843,6 +843,26 @@ aria-label="Toggle navigation">Testimonials</a>
                 }
             });
         });
+
+          // Videobox
+            $(function () {
+                // Close and remove on esc
+                $(document).on("keyup", function (e) {
+                    if (e.keyCode == 27) {
+                        $(".overlay").remove();
+                    }
+                });
+
+                // Close and remove on click
+                $("body").on("click", ".close", function () {
+                    $(".overlay").remove();
+                });
+
+                // Stay open on click video area
+                $("body").on("click", ".videoBox", function (e) {
+                    e.stopPropagation();
+                });
+            });
     </script>
 </body>
 

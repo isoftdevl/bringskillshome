@@ -150,24 +150,4 @@
   });
   // swipper slide
 
-  // Videobox
-  $(function () {
-    // Close and remove on esc
-    $(document).on("keyup", function (e) {
-      if (e.keyCode == 27) {
-        $(".overlay").remove();
-      }
-    });
-
-    // Close and remove on click
-    $("body").on("click", ".close", function () {
-      $(".overlay").remove();
-    });
-
-    // Stay open on click video area
-    $("body").on("click", ".videoBox", function (e) {
-      e.stopPropagation();
-    });
-  });
-  
 })();
