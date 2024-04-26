@@ -5,25 +5,11 @@ Index Of css
 02. Normalize CSS
 03. Header CSS
 04. Hero CSS
-05. App Info CSS
-06. Features CSS
 07. Achievement CSS
 08. About CSS
 09. Testimonial CSS
-10. Portfolio CSS
-11. Service CSS
-12. Login CSS
-13. Pricing CSS
-14. Faq CSS
-15. Blog CSS
-16. Clients CSS
-17. Team CSS
-18. Call to Action CSS
-19. Newsletter CSS
-20. Contact CSS
-21. Error CSS
-22. Mail Success CSS
-23. Footer CSS
+10. Courses CSS
+11. Footer CSS
 ========================== */
 /*======================================
     Variables
@@ -46,6 +32,7 @@ Index Of css
   --bottom-button-hover-color: #333;
   --side-button-color: #25d366;
   --side-button-hover: #00ff5e;
+  --white: #fff;
 }
 
 html {
@@ -8337,4 +8324,54 @@ blockquote span {
     height: 100px;
     left: -7px
   }
+}
+
+/* overlay */
+/* Video */
+.overlay {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  /* z-index: 80; */
+}
+
+.videoBox {
+  position: fixed;
+  width: 90%;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  padding: 20px;
+  background: var(--white);
+  text-align: center;
+  border-radius: 5px;
+}
+
+.videoBox video {
+  width: 100%;
+}
+
+.videoBox img {
+  width: 100%;
+}
+
+@media (min-width: 766px) {
+  .videoBox {
+    width: 50%;
+  }
+}
+
+.close {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: transparent url(../images/close.png) no-repeat center center;
+  opacity: 0.8;
+  cursor: pointer;
 }
