@@ -8169,14 +8169,14 @@ blockquote span {
 .video-testimonial-block {
   position: relative;
   width: auto;
-  height: 50vh;
+  height: 44vh;
   overflow: hidden;
   margin-bottom: 30px;
 }
 
 .video-thumbnail .img-fluid {
   max-width: 100%;
-  height: 50vh;
+  height: 44vh;
   overflow: hidden;
   border-top-left-radius: 5px;
   border-right: var(--main-color);
@@ -8344,7 +8344,7 @@ blockquote span {
   top: 0;
   bottom: 0;
   right: 0;
-  /* z-index: 80; */
+  z-index: 80;
 }
 
 .videoBox {
